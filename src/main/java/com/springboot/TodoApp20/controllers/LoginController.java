@@ -31,7 +31,7 @@ public class LoginController {
 	private UserRepo UR;
 
 	//login request
-	@RequestMapping(value="login",method=RequestMethod.GET)
+	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String login(ModelMap m){
 		User user = new User();
 		m.addAttribute("user",user);
